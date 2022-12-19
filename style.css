@@ -29,3 +29,33 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+
+form {
+    background-color: yellow;
+  
+  }
+  
+  .ventana {
+    background-color: blue;
+    width: 30%;
+    font-size: 40px;
+    text-align: center;
+    padding: 20%;
+    min-height: 15%;
+    border-radius: 22px;
+    opacity: 0.5;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+  }
+  
+  .ventana:hover {
+    opacity: 1.0;
+  }
+  
+  #ganador {
+    font-size: 40px;
+    text-align: center;
+    font-style: bold;
+  }
+  
