@@ -55,11 +55,11 @@ footer {
 }
 
 form {
-  background-color: yellow;
+  background-color: #FEB139;
 }
 
 .ventana {
-  background-color: blue;
+  background-color: white;
   width: 30%;
   font-size: 40px;
   text-align: center;
@@ -89,6 +89,14 @@ form {
 #Formulario {
   margin-top: 5%;
   margin-right: 15%;
+}
+
+#Fondo {
+  margin-top: 5%;
+  margin-right: 15%;
+  width: 300px;
+  height: 25rem;
+  background-color: #FEB139;
 }
 
 #Omikuji {
@@ -145,11 +153,14 @@ form {
 }
 
 #namesBox {
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0);
+  font-family: 'Jua';
   font-size: 1.875rem;
   text-align: center;
-  color: #F24C4C;
-  background-color: rgba(144, 238, 144, 0.642);
+  color: white;
+  background-color: rgba(255, 255, 255, 0.219);
+  margin: 2%;
+  
 }
 
 
