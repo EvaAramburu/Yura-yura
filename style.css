@@ -42,14 +42,11 @@ header {
   width: 70px;
 }
 
-.caja1 {
+.leftSide {
   float: left;
 }
-.caja1:hover{
-  background-color: none;
-}
 
-.caja2 {
+.rightSide {
   float: right;
 }
 
@@ -70,7 +67,7 @@ nav ul li a {
   text-decoration: none;
 }
 
-.caja2 li:hover {
+.rightSide li:hover {
   background: #f24c4c;
 }
 
