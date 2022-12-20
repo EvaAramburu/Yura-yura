@@ -121,8 +121,7 @@ form {
 
 #Fondo {
   margin-top: 5%;
-  margin-right: 15%;
-  width: 300px;
+  width: 400px;
   height: 25rem;
   background-color: #FEB139;
 }
@@ -259,6 +258,7 @@ nav ul li a {
 
   #Fondo {
     margin-top: 5%;
+    margin-bottom: 5%;
     width: 60vw;
     height: auto;
     grid-column: 2;
@@ -275,4 +275,5 @@ nav ul li a {
     background-color: rgba(255, 255, 255, 0.219);
     margin: 2%;
     overflow-y: scroll; height:140px;
+}
 }
