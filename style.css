@@ -50,6 +50,8 @@ footer {
   grid-row: 3/4;
   background-color: rgb(172, 37, 37);
   display: flex;
+  justify-content: space-around;
+  padding-top: .9375rem;
 }
 
 form {
