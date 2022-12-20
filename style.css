@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Jua';
+  src: url(./Font/Jua-Regular.ttf);
+}
 body {
     background-color: lightgoldenrodyellow;
     display:grid;
@@ -13,27 +17,100 @@ h1 {
     justify-content: center;
     padding: 15.625rem;
 }
+
+h2 { 
+  grid-column: 2;
+  grid-row: 1;
+  margin: 10%;
+  font-size: 1.875rem;
+  font-family: 'Jua';
+  color: white;
+}
+
 header {
     grid-column: 1/5;
     background-color: navy;
 }
 .main {
     grid-column: 1/5;
-    background-color: rgb(254, 254, 127);
+    background-image: url(./IMG/fondo\ 4.png);
+    background-size: contain;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
 footer {
     grid-column: 1/5;
     grid-row: 3/4;
     background-color: rgb(172, 37, 37);
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    
 }
 
 form {
     background-color: yellow;
   
   }
+
+
+  
+  .ventana {
+    background-color: blue;
+    width: 30%;
+    font-size: 40px;
+    text-align: center;
+    padding: 20%;
+    min-height: 15%;
+    border-radius: 22px;
+    opacity: 0.5;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+  }
+  
+  .ventana:hover {
+    opacity: 1.0;
+  }
+  
+  #Tori {
+    width: 25.625rem;
+    height: 30.625rem;
+    background-image: url(./IMG/torii.png);
+    background-size: contain;
+    margin-top: 8%;
+    margin-left: 40%;
+    display: grid;
+  }
+
+  #Omikuji {
+    width: 12.5rem;
+    grid-column: 2;
+    grid-row: 4;
+
+  }
+
+#Omikuji:hover{
+  animation: vaiven 1s 1;
+}
+@keyframes vaiven{
+  15%{
+    transform: translateX(-25%) rotate(-10deg);
+  }
+  30%{
+    transform: translateX(20%) rotate(5deg);
+  }
+  45%{
+    transform: translateX(-10%) rotate(-3deg);
+  }
+  60%{
+    transform: translateX(5%) rotate(2deg);
+  }
+  75%{
+    transform: translateX(-3%) rotate(-1deg);
+  }  
+}
 
 #ganador {
     font-size: 40px;
@@ -55,10 +132,24 @@ form {
     border-radius: 22px;
 }
 
-#contenedorNombres {
+#namesBox {
     border: 1px solid black; 
     font-size: 1.875rem; 
     text-align: center; 
     color: #F24C4C; 
     background-color: rgba(144, 238, 144, 0.642);
 }
+  
+@media (max-width: 1024px) {
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      background-size: cover;}
+
+    #Tori {
+      margin-top: 8%;
+      margin-left: 18%;
+    }
+
+   }
