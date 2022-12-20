@@ -34,6 +34,33 @@ header {
   background-color: navy;
 }
 
+.dropdown {
+    display: inline-block;
+    position: relative;
+    color: white; 
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    background-color: #143F6B;  
+    box-shadow: 0px 10px 10px 0px rgb(183, 182, 182);
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    display: block;
+    color: #ffffff;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #f24c4c;
+  }
+
 .main {
   grid-column: 1/5;
   grid-row: 2/3;
