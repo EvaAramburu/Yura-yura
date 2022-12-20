@@ -34,28 +34,31 @@ form {
     background-color: yellow;
   
   }
-  
-  .ventana {
-    background-color: blue;
-    width: 30%;
-    font-size: 40px;
-    text-align: center;
-    padding: 20%;
-    min-height: 15%;
-    border-radius: 22px;
-    opacity: 0.5;
-    position: absolute;
-    left: 20%;
-    top: 20%;
-  }
-  
-  .ventana:hover {
-    opacity: 1.0;
-  }
-  
-  #ganador {
+
+#ganador {
     font-size: 40px;
     text-align: center;
     font-style: bold;
   }
   
+.window {
+    background-color: rgba(206, 206, 206, 0.587);
+    color: #F24C4C; 
+    text-align: center; 
+    font-size: 3.125rem;
+    width: 31.25rem; 
+    height: 12.5rem; 
+    position: absolute; 
+    left: 35%; 
+    top: 35%; 
+    line-height: 12.5rem;
+    border-radius: 22px;
+}
+
+#contenedorNombres {
+    border: 1px solid black; 
+    font-size: 1.875rem; 
+    text-align: center; 
+    color: #F24C4C; 
+    background-color: rgba(144, 238, 144, 0.642);
+}

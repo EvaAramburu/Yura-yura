@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="reset.css" type="text/css">
-    <!-- <audio src="japan-koto-folk-background-music-124876.mp3"></audio> -->
+    <!-- <link rel="stylesheet" href="resetstyle.css" type="text/css"> -->
+    <link rel="icon" type="image/jpg" href="./images/Umikoji basico.png"/>
     <title> Practica Yura-Yura </title>
 </head>
 <body>
+    <audio src="./audio/japan-koto-folk-background-music-124876.mp3" autoplay loop></audio>
     <header>
        <nav>
            <p> logo y nombre </p>
@@ -21,8 +22,8 @@
     <div class="main">
         <form>
             <label for="fname">Name</label><br>
-           <input type="text" class="anyName" name="anyName"><br>
-            <label for="fname">Name</label><br>
+           <input type="text" id="anyName" name="anyName"><br>
+            <!-- <label for="fname">Name</label><br>
            <input type="text" class="anyName" name="anyName"><br>
             <label for="fname">Name</label><br>
            <input type="text" class="anyName" name="anyName"><br>
@@ -31,13 +32,21 @@
               <label for="fname">Name</label><br>
            <input type="text" class="anyName" name="anyName"><br>
          
+            <label for="fname">Insert a name:</label>
+           <textarea id="nameArea" class="anyName" name="anyName"
+            rows="5" cols="33">
+           </textarea> -->
+  
          
             <input type="button" id="rname" value="Pick one" /> 
           </form>
          
-           <p id="ganador">
-           AND THE WINNER IS...
-           </p>
+        <div id="namesBox"> 
+        </div>
+        <button id="submitBtn" type="button">Submit</button>
+        <div id="ganador"> 
+        </div>
+
     </div>
     <footer>
     <div class="share"> Share </div>
