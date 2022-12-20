@@ -36,6 +36,7 @@ header {
 
 .main {
   grid-column: 1/5;
+  grid-row: 2/3;
   background-image: url(./IMG/fondo\ 4.png);
   background-size: contain;
   background-attachment: fixed;
@@ -78,7 +79,7 @@ form {
   height: 30.625rem;
   background-image: url(./IMG/torii.png);
   background-size: contain;
-  margin-top: 8%;
+  margin-top: 12%;
   margin-left: 40%;
   display: grid;
 }
