@@ -83,6 +83,11 @@ form {
     margin-left: 40%;
     display: grid;
   }
+  
+  #Formulario {
+    margin-top: 5%;
+    margin-right: 15%;
+  }
 
   #Omikuji {
     width: 12.5rem;
