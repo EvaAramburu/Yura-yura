@@ -13,10 +13,7 @@ h1 {
     justify-content: center;
     padding: 15.625rem;
 }
-header {
-    grid-column: 1/5;
-    background-color: navy;
-}
+
 .main {
     grid-column: 1/5;
     background-color: rgb(254, 254, 127);
@@ -29,3 +26,52 @@ footer {
     justify-content: space-around;
     align-items: center;
 }
+
+
+/* Aquí empieza el nav  */
+
+header {
+  grid-column: 1/5;
+  background-color: #143F6B;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+#logoNavegador {
+  width: 70px;
+}
+
+.caja1 {
+  float: left;
+}
+.caja1:hover{
+  background-color: none;
+}
+
+.caja2 {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.caja2 li:hover {
+  background: #f24c4c;
+}
+
+/* Aquí termina el nav */
