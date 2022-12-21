@@ -159,8 +159,14 @@ form {
   }
 }
 
+#gif {
+  position: absolute; 
+  left: 25%;
+  top: 5%;
+}
+
 #ganador {
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
   font-style: bold;
 }
@@ -256,6 +262,15 @@ nav ul li a {
     margin-left: 18%;
   }
 
+  .window {
+    position: absolute; 
+    left: 20%; 
+  }
+  #gif {
+    position: absolute; 
+    left: 8%;
+  }
+
   #Fondo {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -276,4 +291,6 @@ nav ul li a {
     margin: 2%;
     overflow-y: scroll; height:140px;
 }
+
+
 }
