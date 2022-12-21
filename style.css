@@ -83,6 +83,7 @@ footer {
 
 #submitBtn{
   width: 9.375rem;
+  height: 2.5rem;
   margin-top: .625rem;
   background-color: #F24C4C;
   border-radius: .625rem;
@@ -94,6 +95,7 @@ footer {
 
 #rname{
   width: 6.25rem;
+  height: 2.5rem;
   margin-top: .625rem;
   background-color: #f24c4c;
   color: #fff;
@@ -110,6 +112,7 @@ footer {
 }
 #clear{
   width: 6.25rem;
+  height: 2.5rem;
   margin-top: .625rem;
   background-color: #f24c4c;
   color: #fff;
@@ -117,6 +120,11 @@ footer {
   border-radius: .625rem;
   font-family: Jua;
   font-size: medium;
+}
+#boxbtn{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 
