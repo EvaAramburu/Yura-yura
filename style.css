@@ -81,6 +81,43 @@ footer {
   padding-top: .9375rem;
 }
 
+
+#submitBtn{
+  width: 9.375rem;
+  margin-top: .625rem;
+  background-color: #F24C4C;
+  border-radius: .625rem;
+  color: #fff;
+  border-color: #fff;
+  font-family: Jua;
+  font-size: medium;
+}
+
+#rname{
+  width: 6.25rem;
+  margin-top: .625rem;
+  background-color: #f24c4c;
+  color: #fff;
+  border-color:#ffffff ;
+  border-radius: .625rem;
+  font-family: Jua;
+  font-size: medium;
+  }
+
+#anyName {
+  width: 18.75rem;
+  border-color: #ffffff;
+  border-radius: .625rem;
+}
+#clear{
+  background-color: #f24c4c;
+  color: #fff;
+  border-color:#ffffff ;
+  border-radius: .625rem;
+  font-family: Jua;
+  font-size: medium;
+}
+
 form {
   background-color: #FEB139;
 }

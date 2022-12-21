@@ -18,12 +18,9 @@ function addName() {
 submitBtn.addEventListener('click', addName); 
 
 function randomName() {
-//    let nameString = document.querySelector(textarea); 
-//    let nameSplit = nameString.split(',');
-//    console.log(nameSplit);
-
-    // let inputElements = document.querySelectorAll(".anyName");
-    // let nombres = ([...inputElements].map(element => element.value)); 
+    document.getElementById('clear').addEventListener('click', function () {
+        document.getElementById('namesBox').innerHTML= '';
+    })
 
     let winner = Math.floor(Math.random()*namesArray.length);
     let rValue = namesArray[winner];
