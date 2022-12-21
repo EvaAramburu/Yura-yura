@@ -16,6 +16,9 @@ function addName() {
 }
 
 submitBtn.addEventListener('click', addName); 
+    document.getElementById('clear').addEventListener('click', function () {
+    document.getElementById('namesBox').innerHTML= '';
+})
 
 function showGif() {
    let gifDisplay = document.getElementById('gif'); 
@@ -30,13 +33,8 @@ gif.addEventListener('click', closeGif);
 gif.addEventListener('click', randomName);
 
 function randomName() {
-//    let nameString = document.querySelector(textarea); 
-//    let nameSplit = nameString.split(',');
-//    console.log(nameSplit);
-
-    // let inputElements = document.querySelectorAll(".anyName");
-    // let nombres = ([...inputElements].map(element => element.value)); 
-
+    
+    
     let winner = Math.floor(Math.random()*namesArray.length);
     let rValue = namesArray[winner];
 
