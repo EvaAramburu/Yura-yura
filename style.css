@@ -81,7 +81,6 @@ footer {
   padding-top: .9375rem;
 }
 
-
 #submitBtn{
   width: 9.375rem;
   margin-top: .625rem;
@@ -110,6 +109,8 @@ footer {
   border-radius: .625rem;
 }
 #clear{
+  width: 6.25rem;
+  margin-top: .625rem;
   background-color: #f24c4c;
   color: #fff;
   border-color:#ffffff ;
@@ -117,6 +118,7 @@ footer {
   font-family: Jua;
   font-size: medium;
 }
+
 
 form {
   background-color: #FEB139;

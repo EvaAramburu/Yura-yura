@@ -16,12 +16,13 @@ function addName() {
 }
 
 submitBtn.addEventListener('click', addName); 
+    document.getElementById('clear').addEventListener('click', function () {
+    document.getElementById('namesBox').innerHTML= '';
+})
 
 function randomName() {
-    document.getElementById('clear').addEventListener('click', function () {
-        document.getElementById('namesBox').innerHTML= '';
-    })
-
+    
+    
     let winner = Math.floor(Math.random()*namesArray.length);
     let rValue = namesArray[winner];
 
