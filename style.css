@@ -116,12 +116,12 @@ form {
 #Formulario {
   margin-top: 5%;
   margin-right: 15%;
+  display: flex;
 }
 
 #Fondo {
   margin-top: 5%;
-  margin-right: 15%;
-  width: 300px;
+  width: 400px;
   height: 25rem;
   background-color: #FEB139;
 }
@@ -187,7 +187,7 @@ form {
   color: white;
   background-color: rgba(255, 255, 255, 0.219);
   margin: 2%;
-  
+  overflow-y: scroll; height:300px;
 }
 
 
@@ -245,8 +245,35 @@ nav ul li a {
     background-size: cover;
   }
 
+  #Formulario {
+    margin-top: 5%;
+    display: grid; 
+    grid-template-columns: auto, auto, auto, auto;
+  }
+
   #Tori {
     margin-top: 8%;
     margin-left: 18%;
   }
+
+  #Fondo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 60vw;
+    height: auto;
+    grid-column: 2;
+    justify-content: center;
+    background-color: #FEB139;
+  }
+
+  #namesBox {
+    border: 1px solid rgba(0, 0, 0, 0);
+    font-family: 'Jua';
+    font-size: 1.875rem;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.219);
+    margin: 2%;
+    overflow-y: scroll; height:140px;
+}
 }
