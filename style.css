@@ -70,7 +70,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
+ }
 
 footer {
   grid-column: 1/5;
@@ -110,6 +110,7 @@ footer {
   border-color: #ffffff;
   border-radius: .625rem;
 }
+
 #clear{
   width: 6.25rem;
   height: 2.5rem;
@@ -121,12 +122,12 @@ footer {
   font-family: Jua;
   font-size: medium;
 }
+
 #boxbtn{
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 
 form {
   background-color: #FEB139;
