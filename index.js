@@ -20,6 +20,18 @@ submitBtn.addEventListener('click', addName);
     document.getElementById('namesBox').innerHTML= '';
 })
 
+function showGif() {
+   let gifDisplay = document.getElementById('gif'); 
+   gifDisplay.innerHTML = `<img src="/IMG/caja700px.gif" alt="caja">` ; 
+}
+
+function closeGif() {
+    document.getElementById('gif').style.display="none"; 
+}
+
+gif.addEventListener('click', closeGif);
+gif.addEventListener('click', randomName);
+
 function randomName() {
     
     
@@ -27,14 +39,13 @@ function randomName() {
     let rValue = namesArray[winner];
 
     let ganador = document.getElementById('ganador'); 
-    ganador.innerHTML = '<div class=window>' + '🎊' + rValue + '🎊' + '</div>'; 
-    
+    ganador.innerHTML = `<div class=window> 🎊 ${rValue} 🎊 </div>`; 
 }
 
-function cerrar(){
+function closeWinner(){
     document.getElementById('ganador').style.display="none"; 
 }
 
-rname.addEventListener('click', randomName);
+rname.addEventListener('click', showGif);
 
-ganador.addEventListener('dblclick', cerrar);
+ganador.addEventListener('click', closeWinner);
