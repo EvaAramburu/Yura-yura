@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <!-- <link rel="stylesheet" href="resetstyle.css" type="text/css"> -->
     <link rel="icon" type="image/jpg" href="./IMG/Umikoji basico.png" />
-    <title> Practica Yura-Yura </title>
+    <title> Yura-Yura </title>
 </head>
 
 <body>
-    <audio src="./audio/japan-koto-folk-background-music-124876.mp3" autoplay loop> </audio>
+    <!-- <audio src="./audio/japan-koto-folk-background-music-124876.mp3" autoplay loop> </audio> -->
     <div id="gif"> </div>
     <!-- Aquí empieza el nav -->
     <header>
@@ -20,6 +20,7 @@
             <ul class="leftSide">
                 <li><img id="logoNavegador" src="./IMG/logo blanco.png" alt="Logo navegador"></li>
                 <li id="botonNavegador1"> <a href="#">Easy Resourses</a></li>
+
             </ul>
             <ul class="rightSide">
                 <li id="botonNavegador2">
@@ -56,9 +57,9 @@
                     <div id="boxbtn">
                         <label for="fname"></label><br>
                         <input type="text" id="anyName" name="anyName">
-                        <button id="submitBtn" type="button">Submit</button>&nbsp;
-                        <input type="button" id="rname" value="Pick one" />&nbsp;
-                        <button id="clear" type="reset">Clear</button> &nbsp;
+                        <button id="submitBtn" type="button">Agregar</button>&nbsp;
+                        <input type="button" id="rname" value="Sorteo" />&nbsp;
+                        <button id="clear" type="reset">Limpiar</button> &nbsp;
                     </div>
                </form>  
             </div>
@@ -81,10 +82,15 @@
             <a id="Icon" href="https://www.linkedin.com" target="_blank"><img src="./iconos/linkedin-26.png" alt="Linkedin"></a> &nbsp;
             &nbsp;
         </div>
+        <div>
+            <audio
+                controls autoplay loop
+                src="./audio/japan-koto-folk-background-music-124876.mp3">
+        </div>
         <div class="language">
-            <img src="./iconos/japan_flags_flag_17019.png" alt="Japan">&nbsp; &nbsp;
-            <img src="./iconos/spain_flags_flag_17068.png" alt="Spain">&nbsp; &nbsp;
-            <img src="./iconos/united_kingdom_flags_flag_17079.png" alt="United Kingdom">
+            <img src="./iconos/japan_flags_flag_17019.png" class="jap" alt="Japan">&nbsp; &nbsp;
+            <img src="./iconos/spain_flags_flag_17068.png" class="es" alt="Spain">&nbsp; &nbsp;
+            <img src="./iconos/united_kingdom_flags_flag_17079.png" class="eng" alt="United Kingdom">
         </div>
     </footer>
     <script src="index.js"> </script>
