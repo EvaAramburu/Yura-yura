@@ -72,14 +72,6 @@ header {
   justify-content: space-between;
 }
 
-footer {
-  grid-column: 1/5;
-  grid-row: 3/4;
-  background-color: rgb(172, 37, 37);
-  display: flex;
-  justify-content: space-around;
-  padding-top: .9375rem;
-}
 
 #submitBtn{
   width: 9.375rem;
@@ -286,6 +278,19 @@ nav ul li a {
 
 .rightSide li:hover {
   background: #f24c4c;
+}
+
+footer {
+  grid-column: 1/5;
+  grid-row: 3/4;
+  background-color: rgb(172, 37, 37);
+  display: flex;
+  justify-content: space-around;
+  padding-top: .9375rem;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color:rgb(172, 37, 37);  
 }
 
 /* Aquí termina el nav */
