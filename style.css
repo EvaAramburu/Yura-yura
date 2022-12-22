@@ -31,7 +31,43 @@ h2 {
 
 header {
   grid-column: 1/5;
-  background-color: navy;
+  background-color: #143F6B;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+#logoNavegador {
+  width: 70px;
+}
+
+.leftSide {
+  float: left;
+}
+
+.rightSide {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.rightSide li:hover {
+  background: #f24c4c;
 }
 
 .dropdown {
@@ -39,6 +75,7 @@ header {
     position: relative;
     color: white; 
   }
+
   .dropdown-content {
     display: none;
     position: absolute;
@@ -47,15 +84,18 @@ header {
     background-color: #143F6B;  
     box-shadow: 0px 10px 10px 0px rgb(183, 182, 182);
   }
+
   .dropdown:hover .dropdown-content {
     display: block;
-  }
+  } 
+
   .dropdown-content a {
     display: block;
     color: #ffffff;
     padding: 5px;
     text-decoration: none;
   }
+
   .dropdown-content a:hover {
     color: #FFFFFF;
     background-color: #f24c4c;
@@ -71,7 +111,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
  }
-
 
 #submitBtn{
   width: 9.375rem;
@@ -126,25 +165,7 @@ form {
   border-radius: 1.25rem;
 }
 
-.ventana {
-  background-color: white;
-  width: 30%;
-  font-size: 40px;
-  text-align: center;
-  padding: 20%;
-  min-height: 15%;
-  border-radius: 22px;
-  opacity: 0.5;
-  position: absolute;
-  left: 20%;
-  top: 20%;
-}
-
-.ventana:hover {
-  opacity: 1.0;
-}
-
-#Tori {
+#tori {
   width: 25.625rem;
   height: 30.625rem;
   background-image: url(./IMG/torii.png);
@@ -154,13 +175,13 @@ form {
   display: grid;
 }
 
-#Formulario {
+#formulario {
   margin-top: 5%;
   margin-right: 15%;
   display: flex;
 }
 
-#Fondo {
+#fondo {
   margin-top: 5%;
   width: 400px;
   height: 25rem;
@@ -168,15 +189,69 @@ form {
   border-radius: 1.25rem;
 }
 
-#Omikuji {
+#omikuji {
   width: 12.5rem;
   grid-column: 2;
   grid-row: 4;
 
 }
 
-#Omikuji:hover {
+#omikuji:hover {
   animation: vaiven 1s 1;
+}
+
+#namesBox {
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 1.25rem;
+  font-family: 'Jua';
+  font-size: 1.875rem;
+  text-align: center;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.219);
+  margin: 2%;
+  overflow-y: scroll; height:300px;
+}
+
+#gif {
+  position: absolute; 
+  left: 25%;
+  top: 5%;
+}
+
+#winnerText {
+  font-size: 2.5rem;
+  text-align: center;
+  font-style: bold;
+}
+
+.window {
+  width: 31.25rem;
+  height: 15.625rem;
+  color: #F24C4C;
+  text-align: center;
+  font-size: 3.125rem;
+  position: absolute;
+  left: 35%;
+  top: 35%;
+  line-height: 3.125rem;
+  border-radius: .625rem;
+  border: #FEB139 solid .625rem;
+  background-color: white;
+  animation: fadeIn 2s;
+}
+
+#zorroGif {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @keyframes vaiven {
@@ -201,89 +276,6 @@ form {
   }
 }
 
-#gif {
-  position: absolute; 
-  left: 25%;
-  top: 5%;
-}
-
-#ganador {
-  font-size: 2.5rem;
-  text-align: center;
-  font-style: bold;
-}
-
-.window {
-  background-color: rgba(206, 206, 206, 0.587);
-  color: #F24C4C;
-  text-align: center;
-  font-size: 3.125rem;
-  width: 31.25rem;
-  height: 12.5rem;
-  position: absolute;
-  left: 35%;
-  top: 35%;
-  line-height: 12.5rem;
-  border-radius: 22px;
-}
-
-#namesBox {
-  border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: 1.25rem;
-  font-family: 'Jua';
-  font-size: 1.875rem;
-  text-align: center;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.219);
-  margin: 2%;
-  overflow-y: scroll; height:300px;
-}
-
-
-
-/* Aquí empieza el nav  */
-
-header {
-  grid-column: 1/5;
-  background-color: #143F6B;
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-}
-
-#logoNavegador {
-  width: 70px;
-}
-
-.leftSide {
-  float: left;
-}
-
-.rightSide {
-  float: right;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  float: left;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-
-nav ul li a {
-  display: block;
-  padding: 20px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.rightSide li:hover {
-  background: #f24c4c;
-}
-
 footer {
   grid-column: 1/5;
   grid-row: 3/4;
@@ -296,8 +288,6 @@ footer {
 audio::-webkit-media-controls-panel {
   background-color:rgb(172, 37, 37);  
 }
-
-/* Aquí termina el nav */
 
 @media (max-width: 1024px) {
 

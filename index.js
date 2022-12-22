@@ -7,18 +7,8 @@ enFlag.addEventListener('click', english);
 let japFlag = document.querySelector('.jap');
 japFlag.addEventListener('click', japanese); 
 
-
-function spanish() {
-    location.href="./index.html"; 
-}
-function english() {
-    location.href="./eng/index.html"; 
-}
-function japanese() {
-    location.href="jap/index.html";
-}
-
 let namesArray = []; 
+let gifDisplay = document.getElementById('gif'); 
 
 function addName() {
     let allName = document.getElementById('anyName').value; 
@@ -28,9 +18,7 @@ function addName() {
     document.getElementById('anyName').value = ''; 
 }
 
-
 function showGif() {
-   let gifDisplay = document.getElementById('gif'); 
    gifDisplay.innerHTML = `<img src="/IMG/caja700px.gif" alt="caja">` ; 
 }
 
@@ -39,17 +27,23 @@ function closeGif() {
 }
 
 function randomName() {
-    
-    
     let winner = Math.floor(Math.random()*namesArray.length);
     let rValue = namesArray[winner];
 
     let ganador = document.getElementById('ganador'); 
-    ganador.innerHTML = `<div class=window> 🎊 ${rValue} 🎊 </div>`; 
+    ganador.innerHTML = `<div class=window> <img id="zorroGif" src="./IMG/zorro.gif" alt="gif"> <p id=winnerText> 🎊 ${rValue} 🎊 </p> </div>`; 
 }
-
 function closeWinner(){
     document.getElementById('ganador').style.display="none"; 
+}
+function spanish() {
+    location.href="./index.html"; 
+}
+function english() {
+    location.href="./eng/index.html"; 
+}
+function japanese() {
+    location.href="./jap/index.html";
 }
 
 submitBtn.addEventListener('click', addName); 
@@ -60,10 +54,3 @@ rname.addEventListener('click', showGif);
 gif.addEventListener('click', closeGif);
 gif.addEventListener('click', randomName);
 ganador.addEventListener('click', closeWinner);
-
-
-// Convertir una variable en un array con el método SpreadOperator: [...]
-
-// let str = 'Hola ,  mundo ,  probando , esto';
-// let nameArray = str.split(',');
-// console.log(nameArray[1]); 
