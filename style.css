@@ -70,7 +70,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
+ }
 
 
 #submitBtn{
@@ -102,6 +102,7 @@ header {
   border-color: #ffffff;
   border-radius: .625rem;
 }
+
 #clear{
   width: 6.25rem;
   height: 2.5rem;
@@ -113,15 +114,16 @@ header {
   font-family: Jua;
   font-size: medium;
 }
+
 #boxbtn{
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-
 form {
   background-color: #FEB139;
+  border-radius: 1.25rem;
 }
 
 .ventana {
@@ -163,6 +165,7 @@ form {
   width: 400px;
   height: 25rem;
   background-color: #FEB139;
+  border-radius: 1.25rem;
 }
 
 #Omikuji {
@@ -226,6 +229,7 @@ form {
 
 #namesBox {
   border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 1.25rem;
   font-family: 'Jua';
   font-size: 1.875rem;
   text-align: center;
