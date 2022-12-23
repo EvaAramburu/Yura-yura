@@ -1,49 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="reset.css" type="text/css">
-    <!-- <audio src="japan-koto-folk-background-music-124876.mp3"></audio> -->
-    <title> Practica Yura-Yura </title>
+    <link rel="icon" type="image/jpg" href="./IMG/Umikoji basico.png" />
+    <title> Yura-Yura </title>
 </head>
+
 <body>
+    <div id="gif"> </div>
     <header>
-       <nav>
-           <p> logo y nombre </p>
-           <p> contáctanos </p>
-           <p> blog </p>
-           <p> recursos </p>
+        <nav id="navegador">
+            <ul class="leftSide">
+                <li><img id="logoNavegador" src="./IMG/logo blanco.png" alt="Logo navegador"></li>
+                <li id="botonNavegador1"> <a href="#">Easy Resources</a></li>
+            </ul>
+            <ul class="rightSide">
+                <li id="botonNavegador2">
+                    <div class="dropdown">
+                        <p> Contáctanos</p>
+                        <div class="dropdown-content">
+                            <a href="https://www.linkedin.com/in/eva-aramburu19950913" target="_blank">Eva</a>
+                            <a href="https://www.linkedin.com/in/delia-mu%C3%B1oz-molero-512b9b256/"
+                                target="_blank">Delia</a>
+                            <a href="#" target="_blank">Nohely</a>
+                            <a href="https://www.linkedin.com/in/paola-arce-95646232/" target="_blank">Paola</a>
+                        </div>
+                </li>
+                <li id="botonNavegador3"> <a
+                        href="https://rimasdecolores.blogspot.com/p/juegos-didacticos-online.html">Blog</a></li>
+                <li id="botonNavegador3"> <a href="https://www.mundoprimaria.com/recursos-educativos">Recursos</a></li>
+            </ul>
         </nav>
     </header>
     <div class="main">
-    <form>
-        <label for="fname">Name</label><br>
-       <input type="text" class="anyName" name="anyName"><br>
-        <label for="fname">Name</label><br>
-       <input type="text" class="anyName" name="anyName"><br>
-        <label for="fname">Name</label><br>
-       <input type="text" class="anyName" name="anyName"><br>
-          <label for="fname">Name</label><br>
-       <input type="text" class="anyName" name="anyName"><br>
-          <label for="fname">Name</label><br>
-       <input type="text" class="anyName" name="anyName"><br>
-     
-     
-        <input type="button" id="rname" value="Pick one" /> 
-      </form>
-     
-       <p id="ganador">
-       AND THE WINNER IS...
-       </p>
+        <section>
+            <div id="tori">
+                <h2>Yura ~ Yura</h2>
+                <img id="omikuji" src="./IMG/umikoji de pie.png" alt="Omikuji">
+            </div>
+        </section>
+        <section id="formulario">
+            <div id="fondo">
+                <form>
+                    <div id="namesBox"> </div>
+                    <div id="boxbtn">
+                        <label for="fname"></label><br>
+                        <input type="text" id="anyName" name="anyName">
+                        <button id="submitBtn" type="button">Agregar</button>&nbsp;
+                        <div id="ganador"> </div>
+                        <input type="button" id="rname" value="Sorteo" />&nbsp;
+                        <button id="clear" type="reset">Limpiar</button> &nbsp;
+                    </div>
+               </form>  
+            </div>
+        </section>
     </div>
  
     <footer>
-    <div class="share"> Share </div>
-    <div class="language"> Language </div>
+        <div class="share">
+            <a id="Icon" href="https://www.twitter.com" target="_blank"><img src="./iconos/twitter-26.png" alt="Twitter"></a> &nbsp;
+            &nbsp;
+            <a id="Icon" href="https://www.facebook.com" target="_blank"><img src="./iconos/facebook-nuevo-26.png" alt="facebook"></a>
+            &nbsp; &nbsp;
+            <a id="Icon" href="https://www.pinterest.es/" target="_blank"><img src="./iconos/pinterest-26.png" alt="Pinterest"></a>
+            &nbsp; &nbsp;
+            <a id="Icon" href="https://www.linkedin.com" target="_blank"><img src="./iconos/linkedin-26.png" alt="Linkedin"></a> &nbsp;
+            &nbsp;
+        </div>
+        <div>
+            <audio
+                controls autoplay loop
+                src="./audio/japan-koto-folk-background-music-124876.mp3">
+        </div>
+        <div class="language">
+            <img src="./iconos/japan_flags_flag_17019.png" class="jap" alt="Japan">&nbsp; &nbsp;
+            <img src="./iconos/spain_flags_flag_17068.png" class="es" alt="Spain">&nbsp; &nbsp;
+            <img src="./iconos/united_kingdom_flags_flag_17079.png" class="eng" alt="United Kingdom">
+        </div>
     </footer>
-<script src="index.js" > </script>
+    <script src="index.js"> </script>
 </body>
+
 </html>
